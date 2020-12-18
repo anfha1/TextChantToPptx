@@ -33,7 +33,7 @@ Ví dụ: "(X2)", "(X3)", v.v...
 6: nếu chỉ 1 lần xuống dòng thì trên file cũng sẽ xuống dòng 1 lần
 7: slide đầu tiên hoặc slide sau dấu thăng sẽ coi như là slide tiêu đề của 1 bài mới
 
-Ví dụ: content hoàn chỉnh
+Ví dụ: content hoàn chỉnh<br>
 Ba Vua hành khúc
 
 1. Đêm dần buông hiu hắt hơi sương mờ xuống đường dài ta bước qua bao nhiêu đồi núi, qua rừng,
