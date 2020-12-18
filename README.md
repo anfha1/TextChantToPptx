@@ -21,9 +21,8 @@ file sẽ trả về dạng danh sách (array).
 
 Lưu ý phần content trước khi tải lên
 1. các bài hát cách nhau bởi 1 lần xuống dòng + dấu thăng "#" + 1 lần xuống dòng
-Ví dụ "
-\#
-"
+Ví dụ "\n
+\#\n"
 2. danh sách lời phải theo đinh dạng: lời số + dấu chấm + dấu cách
 Ví dụ: "1. " "2. ", "3. ", v.v...
 3. điệp khúc thì phải theo đinh dạng "ĐK" + dấu hai chấm + dấu cách
@@ -59,8 +58,8 @@ xin quỳ dâng tâm linh ta tôn thờ Chúa. Từ nay ta có Chúa không cô 
 
 Bao nhiêu nước mắt đau buồn xin chấm dứt, và bao lỗi lầm nguyền xin Chúa buông tha ta vui mừng,
 
-mai đây quay gót trên đường về xa vắng, lòng lâng lâng biết có Giê-xu luôn luôn gần.
-\#
+mai đây quay gót trên đường về xa vắng, lòng lâng lâng biết có Giê-xu luôn luôn gần.\n
+\#\n
 Một đêm đông xưa
 
 Một đêm đông xưa, nơi máng chiên đê hèn, Giê-xu sinh ra, giống như kiếp người lầm than.
