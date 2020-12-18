@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Xây nhanh công cụ tạo powerpoint thánh ca nhanh</title>
+	<meta charset="utf-8" />
+
+	<!--lib javascript-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+	<!--Đây là khung file HTML Cơ bản để mình làm cho nhanh thui,  mk cần resfull api nên cần dùng jquery và vuejs giúp lập tình dễ hơn thui-->
+
+	<!--HTML code-->
+	<div id="appVue">
+		<div>
+			<ul>
+				<li><input type="checkbox" v-model="p6l"> 16-9 Sáng</li>
+				<li><input type="checkbox" v-model="p6d"> 16-9 Tối</li>
+				<li><input type="checkbox" v-model="p4l"> 4-3 Sáng</li>
+				<li><input type="checkbox" v-model="p4d"> 4-3 Tối</li>
+				<li><input type="checkbox" v-model="zip"> Zip?</li>
+			</ul>
+		</div>
+
+		<div>
+			<input type="text" v-model="name" placeholder="Tên file"><br><br>
+			<textarea cols="150" rows="20" v-model="content" placeholder="Nội dung"></textarea><br><br>
+			<button @click="create_ppt()">Tạo ngay</button>
+		</div>
+
+		<div>
+			<p>Danh sách kết quả trả về :)</p>
+			<p><i>{{ msg }}</i></p>
+			<ul>
+				<li v-for="file in listfile"><a v-bind:href="file">{{ file }}</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		// javascript jquery code
+		var reqSend = function(data){
+			$.ajax({
+				url: "http://api.chantmda.tk/api/textToPPT",
+				//url: "http://tool.chant.mda/api/textToPPT",
+				method: "POST",
+				dataType: "json",
+				data: data,
+				success: function(res){
+					console.log(res);
+					app.listfile = res.file;
+					app.msg = res.msg;
+				}
+			});
+		}
+	</script>
+
+	<script type="text/javascript">
+		// javascript vuejs code
+		var app = new Vue({
+			el: "#appVue",
+			data: {
+				name: '',
+				content: '',
+				p6l: true,
+				p6d: false,
+				p4l: false,
+				p4d: false,
+				zip: true,
+
+				listfile: [],
+				msg: ""
+			},
+			methods: {
+				create_ppt: function(){
+					this.msg = "Đang tạo file";
+					reqSend({
+						file_name: this.name,
+						content: this.content,
+						'1609L': this.p6l,
+						'1609D': this.p6d,
+						'0403D': this.p4d,
+						'0403L': this.p4l,
+
+						zip: this.zip,
+					});
+				}
+			}
+		});
+		Vue.config.productionTip = false;
+	</script>
+</body>
+</html>
