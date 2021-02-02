@@ -27,11 +27,11 @@ Ví dụ "<br/>
 Ví dụ: "1. " "2. ", "3. ", v.v...
 3. điệp khúc thì phải theo đinh dạng "ĐK" + dấu hai chấm + dấu cách
 Ví dụ: "ĐK: "
-4. miêu tả sự lặp lại "(X"+số lần lặp lại+")"
-Ví dụ: "(X2)", "(X3)", v.v...
-5: các slide cách nhau bởi 2+ lần xuống dòng
-6: nếu chỉ 1 lần xuống dòng thì trên file cũng sẽ xuống dòng 1 lần
-7: slide đầu tiên hoặc slide sau dấu thăng sẽ coi như là slide tiêu đề của 1 bài mới
+4. miêu tả sự lặp lại "(X"+số lần lặp lại+")"<br/>
+Ví dụ: "(X2)", "(X3)", v.v...<br/>
+5: các slide cách nhau bởi 2+ lần xuống dòng<br/>
+6: nếu chỉ 1 lần xuống dòng thì trên file cũng sẽ xuống dòng 1 lần<br/>
+7: slide đầu tiên hoặc slide sau dấu thăng sẽ coi như là slide tiêu đề của 1 bài mới<br/>
 
 Ví dụ: content hoàn chỉnh<br>
 Ba Vua hành khúc
